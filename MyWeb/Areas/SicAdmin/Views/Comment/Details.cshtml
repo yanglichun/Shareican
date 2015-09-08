@@ -1,0 +1,107 @@
+﻿@model MyWeb.Models.Comment
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Comment</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ComContent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ComContent)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PublisherID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PublisherID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ComEquipment)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ComEquipment)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ComDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ComDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ComCity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ComCity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Jubao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Jubao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SupportTimes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SupportTimes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AgainstTimes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AgainstTimes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Reply)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Reply)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Floor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Floor)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Isdel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Isdel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ReplyDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ReplyDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TouristName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TouristName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

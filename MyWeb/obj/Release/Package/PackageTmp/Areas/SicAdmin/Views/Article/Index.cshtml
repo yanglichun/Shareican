@@ -1,0 +1,125 @@
+﻿@*@model IEnumerable<MyWeb.Models.Article>*@
+@model PagedList.IPagedList<MyWeb.Models.Article>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>文章列表</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table id="tblong">
+    <tr>
+        <th>
+           @* @Html.DisplayNameFor(model => model.Title)*@标题
+        </th>
+    @*    <th>
+            @Html.DisplayNameFor(model => model.ArticleContent)
+        </th>*@
+        <th>
+         @*  @Html.DisplayNameFor(model => model.CoverImage)*@封面
+        </th>
+        <th>
+           @* @Html.DisplayNameFor(model => model.PublisherID)*@pubid
+        </th>
+        <th>
+          @*  @Html.DisplayNameFor(model => model.CreatDate)*@发布日期
+        </th>
+        <th>
+          @*  @Html.DisplayNameFor(model => model.ChangeDate)*@
+        </th>
+        <th>
+         @*   @Html.DisplayNameFor(model => model.Source)*@来源
+        </th>
+        <th>
+           @* @Html.DisplayNameFor(model=>model.SourceUrl)*@来源url
+        </th>
+
+        <th>
+          @*  @Html.DisplayNameFor(model => model.ClickTimes)*@点击
+        </th>
+        <th>
+           @* @Html.DisplayNameFor(model => model.ArticleType.TypeName)*@分类
+        </th>
+        <th>
+           @* @Html.DisplayNameFor(model => model.Label)*@
+        </th>
+        <th>
+           @* @Html.DisplayNameFor(model => model.AgreeTimes)*@
+        </th>
+  @*      <th>
+            @Html.DisplayNameFor(model => model.Isdel)
+        </th>*@
+        <th>
+         @*   @Html.DisplayNameFor(model => model.Equipment)*@
+        </th>
+        <th>
+           @* @Html.DisplayNameFor(model => model.Sort)*@
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.ArticleContent)
+        </td>*@
+        <td>
+            <img src=" @Html.DisplayFor(modelItem => item.CoverImage)" width="60" height="40" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PublisherID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangeDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Source)
+        </td>
+        <td>
+            @{ string s= Html.DisplayFor(modelItem => item.SourceUrl).ToString();
+               if (s.Length > 7)
+               {
+                   string ns = s.Substring(7, 10);
+               @ns}
+                  else{@s}
+                  }</td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClickTimes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArticleType.TypeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Label)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AgreeTimes)
+        </td>
+    @*    <td>
+            @Html.DisplayFor(modelItem => item.Isdel)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Equipment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sort)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+</table>
+<div style="margin-left:355px;margin-right:auto;">@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))</div>

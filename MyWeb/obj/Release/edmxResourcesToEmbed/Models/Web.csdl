@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShareicanModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ShareicanEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Abouts" EntityType="ShareicanModel.About" />
+    <EntitySet Name="Admins" EntityType="ShareicanModel.Admin" />
+    <EntitySet Name="Announcements" EntityType="ShareicanModel.Announcement" />
+    <EntitySet Name="Articles" EntityType="ShareicanModel.Article" />
+    <EntitySet Name="ArticleTypes" EntityType="ShareicanModel.ArticleType" />
+    <EntitySet Name="Comments" EntityType="ShareicanModel.Comment" />
+    <EntitySet Name="Links" EntityType="ShareicanModel.Link" />
+    <EntitySet Name="MassageBoards" EntityType="ShareicanModel.MassageBoard" />
+    <EntitySet Name="sysdiagrams" EntityType="ShareicanModel.sysdiagram" />
+    <EntitySet Name="Users" EntityType="ShareicanModel.User" />
+    <EntitySet Name="WebInfoes" EntityType="ShareicanModel.WebInfo" />
+    <AssociationSet Name="FK_Article_ArticleType" Association="ShareicanModel.FK_Article_ArticleType">
+      <End Role="ArticleType" EntitySet="ArticleTypes" />
+      <End Role="Article" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Article" Association="ShareicanModel.FK_User_Article">
+      <End Role="Article" EntitySet="Articles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="About">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="AboutContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CreatDate" Type="DateTime" Precision="3" />
+    <Property Name="Isdel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="AdminName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AdminNik" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatDate" Type="DateTime" Precision="3" />
+    <Property Name="LastLoginDate" Type="DateTime" Precision="3" />
+    <Property Name="Isdel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Announcement">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="Publisher" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="PublisherID" Type="Int32" />
+    <Property Name="Announcement1" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Isdel" Type="Boolean" />
+    <Property Name="Sort" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ArticleContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CoverImage" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PublisherID" Type="Int32" />
+    <Property Name="CreatDate" Type="DateTime" />
+    <Property Name="ChangeDate" Type="DateTime" Precision="3" />
+    <Property Name="Source" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ClickTimes" Type="Int32" />
+    <Property Name="TypeID" Type="Int32" />
+    <Property Name="Label" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AgreeTimes" Type="Int32" />
+    <Property Name="Isdel" Type="Boolean" />
+    <Property Name="Equipment" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sort" Type="Int32" />
+    <NavigationProperty Name="ArticleType" Relationship="ShareicanModel.FK_Article_ArticleType" FromRole="Article" ToRole="ArticleType" />
+    <NavigationProperty Name="Users" Relationship="ShareicanModel.FK_User_Article" FromRole="Article" ToRole="User" />
+    <Property Type="Int32" Name="AgainstTimes" />
+    <Property Type="String" Name="SourceUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ArticleType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatDate" Type="DateTime" Precision="3" />
+    <Property Name="ChangeDate" Type="DateTime" Precision="3" />
+    <Property Name="Isdel" Type="Boolean" />
+    <NavigationProperty Name="Articles" Relationship="ShareicanModel.FK_Article_ArticleType" FromRole="ArticleType" ToRole="Article" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ComContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PublisherID" Type="Int32" />
+    <Property Name="ComEquipment" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ComDate" Type="DateTime" Precision="3" />
+    <Property Name="ComCity" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Jubao" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SupportTimes" Type="Int32" />
+    <Property Name="AgainstTimes" Type="Int32" />
+    <Property Name="Reply" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Floor" Type="Int32" />
+    <Property Name="Isdel" Type="Boolean" />
+    <Property Name="ReplyDate" Type="DateTime" Precision="3" />
+    <Property Name="TouristName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Link">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="LinkName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LinkUrl" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Remark" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CreatDate" Type="DateTime" Precision="3" />
+    <Property Name="Sort" Type="Int32" />
+    <Property Name="Isdel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MassageBoard">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="PublisherID" Type="Int32" />
+    <Property Name="PublisherIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MsgContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CreatDate" Type="DateTime" Precision="3" />
+    <Property Name="Isdel" Type="Boolean" />
+    <Property Name="Equipment" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Reply" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ReplyDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NikName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserImage" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Weibo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="QQ" Type="Int32" />
+    <Property Name="ArticleID" Type="Int32" />
+    <Property Name="CreatDate" Type="DateTime" Precision="3" />
+    <Property Name="LastLoginDate" Type="DateTime" Precision="3" />
+    <Property Name="LoginDay" Type="Int32" />
+    <Property Name="Isdel" Type="Boolean" />
+    <Property Name="Gender" Type="Boolean" />
+    <Property Name="LevelID" Type="Int32" />
+    <NavigationProperty Name="Article" Relationship="ShareicanModel.FK_User_Article" FromRole="User" ToRole="Article" />
+  </EntityType>
+  <EntityType Name="WebInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Keywords" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ChangeTime" Type="DateTime" Precision="3" />
+    <Property Type="String" Name="ServiceContent" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_Article_ArticleType">
+    <End Role="ArticleType" Type="ShareicanModel.ArticleType" Multiplicity="0..1" />
+    <End Role="Article" Type="ShareicanModel.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ArticleType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Article">
+    <End Role="Article" Type="ShareicanModel.Article" Multiplicity="0..1" />
+    <End Role="User" Type="ShareicanModel.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="ArticleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

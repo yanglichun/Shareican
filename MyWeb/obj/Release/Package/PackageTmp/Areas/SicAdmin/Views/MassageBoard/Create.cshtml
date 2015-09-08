@@ -1,0 +1,93 @@
+﻿@model MyWeb.Models.MassageBoard
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>MassageBoard</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PublisherID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PublisherID)
+            @Html.ValidationMessageFor(model => model.PublisherID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PublisherIP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PublisherIP)
+            @Html.ValidationMessageFor(model => model.PublisherIP)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MsgContent)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MsgContent)
+            @Html.ValidationMessageFor(model => model.MsgContent)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreatDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreatDate)
+            @Html.ValidationMessageFor(model => model.CreatDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Isdel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Isdel)
+            @Html.ValidationMessageFor(model => model.Isdel)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Equipment)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Equipment)
+            @Html.ValidationMessageFor(model => model.Equipment)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Reply)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Reply)
+            @Html.ValidationMessageFor(model => model.Reply)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ReplyDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ReplyDate)
+            @Html.ValidationMessageFor(model => model.ReplyDate)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

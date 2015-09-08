@@ -1,0 +1,86 @@
+﻿@model MyWeb.Models.Link
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+@{string dt = DateTime.Now.ToString("G");
+  }
+<script src="~/Scripts/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#dt").text("@dt")
+        ;})
+
+</script>
+
+  <h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Link</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LinkName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LinkName)
+            @Html.ValidationMessageFor(model => model.LinkName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LinkUrl)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LinkUrl)
+            @Html.ValidationMessageFor(model => model.LinkUrl)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Remark)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Remark)
+            @Html.ValidationMessageFor(model => model.Remark)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreatDate)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.CreatDate, new {@id="dt" })
+            @Html.ValidationMessageFor(model => model.CreatDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Sort)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Sort)
+            @Html.ValidationMessageFor(model => model.Sort)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Isdel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Isdel)
+            @Html.ValidationMessageFor(model => model.Isdel)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

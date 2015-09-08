@@ -1,0 +1,58 @@
+﻿@model MyWeb.Models.Announcement
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Announcement</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreateDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreateDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Publisher)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Publisher)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PublisherID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PublisherID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Announcement1)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Announcement1)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Isdel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Isdel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Sort)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Sort)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

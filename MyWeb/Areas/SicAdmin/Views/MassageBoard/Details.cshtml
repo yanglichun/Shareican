@@ -1,0 +1,72 @@
+﻿@model MyWeb.Models.MassageBoard
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>MassageBoard</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PublisherID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PublisherID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PublisherIP)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PublisherIP)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MsgContent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MsgContent)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreatDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreatDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Isdel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Isdel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Equipment)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Equipment)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Reply)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Reply)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ReplyDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ReplyDate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

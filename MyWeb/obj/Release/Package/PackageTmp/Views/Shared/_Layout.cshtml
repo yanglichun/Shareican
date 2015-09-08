@@ -1,0 +1,114 @@
+﻿@using MyWeb.Models;
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="baidu-site-verification" content="yf7qFp0mWQ" />
+      <title>@ViewBag.Title</title>
+        @foreach (WebInfo a in ViewData["tit"] as List<WebInfo>)
+  { 
+    <meta name="keywords" content="@a.Keywords" />
+    <meta name="description" content="@a.Description" />
+  }
+    <link href="~/Scripts/bootstrap.min.css" rel="stylesheet"> 
+    <link href="favicon.ico" type="image/x-icon" rel=icon>
+    <link href="~/Content/css/share.css" rel="stylesheet" />
+    
+@*    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+</head>
+<body>
+    <nav class="navbar-default  navbar-fixed-top nav">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.shareican.com/"><p id="logo">Shareican.com</p></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li id="select"><a href="/home">首页</a></li>
+          @foreach (var at in ViewData["articleType"] as List<ArticleType>)
+          {
+             <li id="@at.id"><a href="/articles/type/@at.id">@at.TypeName</a></li>
+          }
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">更多 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">短语</a></li>
+            <li class="divider"></li>
+            <li><a href="#">关于</a></li>
+            <li class="divider"></li>
+            <li><a href="#">给我提个意见吧</a></li>
+              
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+          @*<li><a href="Home/Create">注册</a></li>
+        <li><a href="Home/Login">登录</a></li>*@
+          <form action="/articles/search/" class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" name="s" class="form-control" placeholder="搜索你需要的">
+        </div>
+        <button type="submit" class="btn btn-default">search</button>
+      </form>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    @RenderBody()
+@*    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)*@
+        <!--footer-->
+      <footer class="footer ">
+
+  <div class="text-center"> <img src="~/Content/Images/logo.png" id="blogo">
+    <span><h4>Thank You</h4></span>
+  </div>
+         
+  <div class="container">
+    <div class="row footer-top">
+      <div class="col-sm-2">
+        
+      </div>
+      <div class="col-sm-10">
+        <div class="">
+           <div class="col-sm-7"id="bottom">
+            <ul class=""id="link"><h5>友情链接</h5>
+            </ul>
+          </div>
+          <div class="col-xs-4 col-md-3">
+            <h5>联系方式</h5>
+            <ul class="list-unstyled" id="contact">
+              <li><a href="#" title="" target="_blank">新浪微博</a>|</li>
+              <li><a href="mailto:646490547@qq.com">电子邮件</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+@*    <hr/>*@
+    <div class="row footer-bottom">
+      <ul class="list-inline text-center">
+        <li><span style="font-family:arial;">Copyright &copy; 2015 Powered by Listen </span><a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备15005288号-1 </a></li><li>Shareican.com</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    <a id="top" href="#top"  style="">
+        <img src="/Content/Images/top.png" id="topimg"/></a>
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1254922138'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254922138%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

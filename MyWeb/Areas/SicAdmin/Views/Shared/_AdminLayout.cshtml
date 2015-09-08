@@ -1,0 +1,145 @@
+﻿@{
+    if(Session["admin"]!=null)
+    {
+        Html.ActionLink("/sicadmin", "sicadmin");
+    }
+    else{
+        MyWeb.Areas.SicAdmin.Controllers.PageHelper.WriteJsMsg("你百度玩去吧","http://baidu.com");
+    }
+    }
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin panel developed with the Bootstrap from Twitter.">
+    <meta name="author" content="travis">
+
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet">
+	<link href="~/Content/css/site.css" rel="stylesheet">
+    <link href="~/Content/css/bootstrap-responsive.css" rel="stylesheet">
+    <script charset="utf-8" src="~/KindEditor/kindeditor.js"></script>
+    <script charset="utf-8" src="~/KindEditor/lang/zh_CN.js"></script>
+    @*代码高亮*@
+<script src="~/KindEditor/plugins/code/code.js"></script>
+   <link href="~/KindEditor/plugins/code/prettify.css" rel="stylesheet" />
+    <script src="~/KindEditor/plugins/code/prettify.js"></script>
+      <style type="text/css">
+          #tblong{width:1110px}
+          .center {
+          text-align:center;
+          }
+      </style>
+      <script>
+          KindEditor.ready(function (K) {
+              var editor1 = K.create('##editor_id', {
+                  cssPath: '/KindEditor/plugins/code/prettify.css',
+                  uploadJson: '/KindEditor/upload/upload_json.ashx',
+                  fileManagerJson: '/KindEditor/upload/file_manager_json.ashx',
+                  allowFileManager: true,
+                  afterCreate: function () {
+                      var self = this;
+                      K.ctrl(document, 13, function () {
+                          self.sync();
+                          K('form[name=example]')[0].submit();
+                      });
+                      K.ctrl(self.edit.doc, 13, function () {
+                          self.sync();
+                          K('form[name=example]')[0].submit();
+                      });
+                  }
+              });
+              prettyPrint();
+          });
+       </script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+      <body>
+        <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Shareican 后台管理</a>
+          <div class="btn-group pull-right">
+			<a class="btn" href="#"><i class="icon-user"></i>Admin Listen</a>
+    <!--        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+			  <li><a href="my-profile.html">资源</a></li>
+              <li class="divider"></li>
+              <li><a href="#">注销</a></li>
+            </ul>-->
+          </div>
+          <div class="nav-collapse">
+            <ul class="nav">
+			<li><a href="~/sicadmin">主页</a></li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">用户<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">新用户</a></li>
+					<li class="divider"></li>
+					<li><a href="#">管理用户</a></li>
+				</ul>
+			  </li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="new-role.html">新管理员</a></li>
+					<li class="divider"></li>
+					<li><a href="roles.html">管理员管理</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#">数据</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span2">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header"><i class="icon-wrench"></i> 管理</li>
+              <li class="active"><a href="~/SicAdmin/WebInfo">基本信息</a></li>
+                <li><a href="~/SicAdmin/User">用户</a></li>
+              <li><a href="~/SicAdmin/Admin">管理员</a></li>
+                <li><a href="~/SicAdmin/Article">文章列表</a></li>
+                <li><a href="~/SicAdmin/ArticleType">文章类型</a></li>
+                <li><a href="~/SicAdmin/Comment">评论管理</a></li>
+                <li><a href="~/SicAdmin/MassageBoard/">留言板</a></li>
+                <li><a href="~/SicAdmin/Link/">友情链接</a></li>
+                <li><a href="~/SicAdmin/Announcement">公告</a></li>
+                <li><a href="~/SicAdmin/About">关于</a></li>
+              <li class="nav-header"><i class="icon-signal"></i> 数据</li>
+              <li><a href="#">General</a></li>
+              <li><a href="#">Users</a></li>
+              <li><a href="#">游客</a></li>
+              <li class="nav-header"><i class="icon-user"></i> Profile</li>
+              <li><a href="#">My profile</a></li>
+              <li><a href="#">Settings</a></li>
+			  <li><a href="#">注销</a></li> 
+            </ul>
+          </div>
+        </div>
+     
+    @RenderBody() 
+
+      </div>
+           <hr>
+          <footer class="well">
+       <div class="center"> &copy; Strass - More Templates <a href="#" target="_blank" title="">Shareican</a> - Collect from <a href="#" title="" target="_blank">后台管理</a></div>
+      </footer></div>
+          @*  @Scripts.Render("~/bundles/jquery")*@
+    @RenderSection("scripts", required: false)
+       @*    <script src="~/Scripts/jquery.js"></script>*@
+	<script src="~/Scripts/bootstrap.min.js"></script>
+     </body>
+    </html>

@@ -1,0 +1,91 @@
+﻿@model PagedList.IPagedList<MyWeb.Models.Article>
+@using PagedList.Mvc;
+@using MyWeb.Models;
+@{
+    ViewBag.Title = "Type";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-2.1.1.min.js"></script>
+<script src="~/Scripts/index.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $.ajaxSetup({ cache: false });
+        var tpid =@ViewBag.d
+        $("#" + tpid).attr("class", "active");
+        $("#select").attr("class", "");
+      
+    })
+
+</script>
+
+     <div class="container">
+      <div class="row">
+          <!--左侧-->
+  <div class="col-sm-9">
+      <div class="thumbnail">
+      <table class="table table-bordered">
+
+<tr>
+  <td class="active"><strong>最新<span style="color:#ff6a00">文章</span></strong></td>
+</tr>    
+            @foreach (var item in Model){  
+  <tr> <td class="">   
+         <h4><a href="/articles/content/@Html.DisplayTextFor(a=>item.id)" id="titlea">@Html.DisplayTextFor(a=>item.Title)</a></h4>  
+        <div id="imgdiv"> 
+            <img src="@Html.DisplayFor(a=>item.CoverImage)" alt="..." class="img-thumbnail" id="typeid">  
+   </div>
+    <div class="col-sm-9" id="article">
+        <p id="ct">
+            @{
+                string s = Html.DisplayTextFor(a => item.ArticleContent).ToString();
+                string strText = System.Text.RegularExpressions.Regex.Replace(s, "<[^>]+>", "");
+                strText = System.Text.RegularExpressions.Regex.Replace(strText, "&[^;]+;", "");
+              if(strText .Length>=150)
+              {
+                  string n = strText.Substring(0, 150);
+                  MvcHtmlString sd = new MvcHtmlString(n);
+                  @sd
+              }
+              else{
+                  MvcHtmlString sq = new MvcHtmlString(strText);
+                  @sq
+              }
+              } ……
+      </p>
+    </div>
+         <div id="fsf">
+             <span>发布：Listen</span>&nbsp
+             <span>&nbsp 时间：@Html.DisplayTextFor(a=>item.CreatDate)</span>
+             <span>&nbsp 分类： @{ string d = Html.DisplayTextFor(q => item.TypeID).ToString();
+                  foreach( var att in ViewData["ArticleType"] as List<ArticleType>)
+                                 {
+                                    int atd=Convert.ToInt32(d);
+                                     int atp = Convert.ToInt32(att.id);
+                                     if (atd == atp)
+                                     {  
+                                         @att.TypeName
+                                     } 
+                                  }
+                               }
+             </span>
+         </div>
+          <div id="seeall">
+              <a href="/articles/content/@Html.DisplayTextFor(a=>item.id)" type="button" class="btn btn-info" style="float:right">查看全文</a>  
+              </div>
+       </td></tr>
+           }
+</table>
+          <center>
+              <div>
+              @Html.PagedListPager(Model, page => Url.Action("Type", new { page }))
+                </div>
+          </center> 
+          </div>
+  </div>
+
+           <div class="col-sm-3">
+       <div class="list-group" id=""> 
+             @{Html.RenderPartial("/views/home/right.cshtml");}
+
+       </div></div>
+          </div></div>

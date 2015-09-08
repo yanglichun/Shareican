@@ -1,0 +1,121 @@
+﻿@model MyWeb.Models.Article
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Article</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ArticleContent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ArticleContent)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CoverImage)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CoverImage)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PublisherID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PublisherID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreatDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreatDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ChangeDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ChangeDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Source)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Source)
+    </div>
+
+       <div class="display-label">
+         @Html.DisplayNameFor(model => model.SourceUrl)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SourceUrl)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ClickTimes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ClickTimes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ArticleType.TypeName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ArticleType.TypeName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Label)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Label)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AgreeTimes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AgreeTimes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Isdel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Isdel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Equipment)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Equipment)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Sort)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Sort)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,135 @@
+﻿@model MyWeb.Models.Comment
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Comment</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ComContent)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ComContent)
+            @Html.ValidationMessageFor(model => model.ComContent)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PublisherID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PublisherID)
+            @Html.ValidationMessageFor(model => model.PublisherID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ComEquipment)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ComEquipment)
+            @Html.ValidationMessageFor(model => model.ComEquipment)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ComDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ComDate)
+            @Html.ValidationMessageFor(model => model.ComDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ComCity)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ComCity)
+            @Html.ValidationMessageFor(model => model.ComCity)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Jubao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Jubao)
+            @Html.ValidationMessageFor(model => model.Jubao)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SupportTimes)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SupportTimes)
+            @Html.ValidationMessageFor(model => model.SupportTimes)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AgainstTimes)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AgainstTimes)
+            @Html.ValidationMessageFor(model => model.AgainstTimes)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Reply)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Reply)
+            @Html.ValidationMessageFor(model => model.Reply)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Floor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Floor)
+            @Html.ValidationMessageFor(model => model.Floor)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Isdel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Isdel)
+            @Html.ValidationMessageFor(model => model.Isdel)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ReplyDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ReplyDate)
+            @Html.ValidationMessageFor(model => model.ReplyDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TouristName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TouristName)
+            @Html.ValidationMessageFor(model => model.TouristName)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

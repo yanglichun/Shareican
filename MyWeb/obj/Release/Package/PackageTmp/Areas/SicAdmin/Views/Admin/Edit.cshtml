@@ -1,0 +1,79 @@
+﻿@model MyWeb.Models.Admin
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Admin</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdminName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AdminName)
+            @Html.ValidationMessageFor(model => model.AdminName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Password)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdminNik)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AdminNik)
+            @Html.ValidationMessageFor(model => model.AdminNik)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreatDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreatDate)
+            @Html.ValidationMessageFor(model => model.CreatDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastLoginDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastLoginDate)
+            @Html.ValidationMessageFor(model => model.LastLoginDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Isdel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Isdel)
+            @Html.ValidationMessageFor(model => model.Isdel)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

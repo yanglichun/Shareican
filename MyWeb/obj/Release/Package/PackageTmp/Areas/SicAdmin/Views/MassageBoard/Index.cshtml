@@ -1,0 +1,76 @@
+﻿@model IEnumerable<MyWeb.Models.MassageBoard>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>留言板</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table id="tblong">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PublisherID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PublisherIP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MsgContent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Isdel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Equipment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Reply)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReplyDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PublisherID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PublisherIP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MsgContent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Isdel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Equipment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reply)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReplyDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

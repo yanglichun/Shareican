@@ -1,0 +1,51 @@
+﻿@model MyWeb.Models.WebInfo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>WebInfo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Keywords)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Keywords)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ChangeTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ChangeTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ServiceContent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ServiceContent)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,101 @@
+﻿@model MyWeb.Models.Article
+
+@{
+    ViewBag.Title = Html.DisplayTextFor(s => s.Title)+" - Shareican";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-2.1.1.min.js"></script>
+<script src="~/Scripts/index.js"></script>
+<link href="~/KindEditor/plugins/code/prettify.css" rel="stylesheet" />
+<script src="~/KindEditor/plugins/code/prettify.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var si=@Html.DisplayTextFor(i=>i.TypeID)
+        $("#" + si).attr("class", "active");
+        var times=0;
+        var s=@Html.DisplayTextFor(e=>e.id)
+        window.onload = function () {
+            $.get("/Articles/times/" + s, null, function (back) {
+              
+            })
+        }
+        prettyPrint();
+    })
+</script>
+<script>
+
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="thumbnail">
+                <table class="table table-bordered">
+                    <tr>
+                        <td class="active">首页&gt;文章&gt;<strong>文章<span style="color: #ff6a00">内容</span></strong></td>
+
+                    </tr>
+                    <tr>
+                        <td class="">
+                            <div class="col-sm-12" id="">
+                                <h3 id="title">@Html.DisplayTextFor(s => s.Title)</h3>
+                                <div class="col-sm-12" id="content3">
+                                    <span>发布日期：@Html.DisplayTextFor(z=>z.CreatDate)</span>
+                                    <span>人气：@Html.DisplayTextFor(x=>x.ClickTimes)</span>
+                                    <span>来源：<a href="@Html.DisplayTextFor(m=>m.SourceUrl)" target="_blank">@Html.DisplayTextFor(y=>y.Source)</a></span>
+                                </div>
+                              <div style="margin-top:40px">
+                                <p id="content">
+                                    @Html.DisplayTextFor(s => s.ArticleContent)
+                                </p></div>
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_more" data-cmd="more"></a>
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                    <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+                                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                                    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                                    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">
+                                    </a><a href="#" class="bds_sdo" data-cmd="sdo" title="分享到麦库记事"></a>
+                                    
+                                </div>
+                                   <div style="text-align:center"><a>点个赞</a>
+                                    <a>拍个砖</a></div>
+
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                    </tr>
+                </table>
+               
+                <div class="ds-thread" data-thread-key="@Html.DisplayTextFor(s => s.id)" data-title="@Html.DisplayTextFor(s => s.Title)" data-url="http://localhost:63963/articles/content/@Html.DisplayTextFor(s => s.id)"></div>
+                
+                <script type="text/javascript">
+                    var duoshuoQuery = { short_name: "shareican" };
+                    (function () {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript'; ds.async = true;
+                        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0]
+                         || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+	</script>
+               
+            </div>
+        </div>
+
+
+
+        <!---右侧--->
+        <div class="col-sm-3">
+
+            <div class="list-group">
+               @{Html.RenderPartial("/views/home/right.cshtml");}
+            </div>
+            
+        </div>
+    </div>
+</div>

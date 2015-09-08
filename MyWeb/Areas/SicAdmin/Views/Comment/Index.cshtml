@@ -1,0 +1,106 @@
+﻿@model IEnumerable<MyWeb.Models.Comment>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>评论列表</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table id="tblong">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ComContent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PublisherID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComEquipment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Jubao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SupportTimes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AgainstTimes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Reply)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Floor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Isdel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReplyDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TouristName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComContent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PublisherID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComEquipment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jubao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SupportTimes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AgainstTimes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reply)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Floor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Isdel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReplyDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TouristName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

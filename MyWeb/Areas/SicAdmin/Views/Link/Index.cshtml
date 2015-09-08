@@ -1,0 +1,64 @@
+﻿@model IEnumerable<MyWeb.Models.Link>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>友情链接</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table id="tblong">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remark)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sort)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Isdel)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remark)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sort)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Isdel)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

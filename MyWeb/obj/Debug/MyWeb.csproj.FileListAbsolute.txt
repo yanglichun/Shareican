@@ -1,0 +1,228 @@
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\MyWeb.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\MyWeb.pdb
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\Antlr3.Runtime.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\EntityFramework.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\Microsoft.Web.Infrastructure.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\Newtonsoft.Json.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Net.Http.Formatting.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.Http.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.Http.WebHost.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.Mvc.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.Optimization.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.Providers.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.Razor.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.WebPages.Deployment.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.WebPages.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.WebPages.Razor.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\WebGrease.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\EntityFramework.xml
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\Newtonsoft.Json.xml
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Net.Http.Formatting.xml
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.Http.xml
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.Http.WebHost.xml
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.Mvc.xml
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.Razor.xml
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.WebPages.xml
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.WebPages.Deployment.xml
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\System.Web.WebPages.Razor.xml
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\EntityFramework.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\System.Web.Http.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\System.Web.Mvc.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\System.Web.Optimization.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\System.Web.Providers.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\System.Web.Razor.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\obj\Debug\MyWeb.csprojResolveAssemblyReference.cache
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\obj\Debug\MyWeb.dll
+G:\Program Files (x86)\vsCodeSave\MyWeb\MyWeb\obj\Debug\MyWeb.pdb
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\MyWeb.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\MyWeb.pdb
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\Antlr3.Runtime.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\EntityFramework.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\Microsoft.Web.Infrastructure.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\Newtonsoft.Json.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Net.Http.Formatting.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.Http.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.Http.WebHost.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.Mvc.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.Optimization.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.Providers.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.Razor.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.WebPages.Deployment.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.WebPages.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.WebPages.Razor.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\WebGrease.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\EntityFramework.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\Newtonsoft.Json.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Net.Http.Formatting.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.Http.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.Http.WebHost.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.Mvc.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.Razor.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.WebPages.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.WebPages.Deployment.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\System.Web.WebPages.Razor.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\EntityFramework.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\System.Web.Http.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\System.Web.Mvc.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\System.Web.Optimization.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\System.Web.Providers.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\System.Web.Razor.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\obj\Debug\MyWeb.csprojResolveAssemblyReference.cache
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\obj\Debug\MyWeb.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\obj\Debug\MyWeb.pdb
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\PagedList.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\PagedList.Mvc.dll
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\PagedList.xml
+G:\学习\我的网站\我的网站\MyWeb\MyWeb\bin\PagedList.Mvc.xml
+G:\学习\git\MyWeb\MyWeb\bin\MyWeb.dll
+G:\学习\git\MyWeb\MyWeb\bin\MyWeb.pdb
+G:\学习\git\MyWeb\MyWeb\bin\Antlr3.Runtime.dll
+G:\学习\git\MyWeb\MyWeb\bin\EntityFramework.dll
+G:\学习\git\MyWeb\MyWeb\bin\Microsoft.Web.Infrastructure.dll
+G:\学习\git\MyWeb\MyWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\学习\git\MyWeb\MyWeb\bin\Newtonsoft.Json.dll
+G:\学习\git\MyWeb\MyWeb\bin\PagedList.dll
+G:\学习\git\MyWeb\MyWeb\bin\PagedList.Mvc.dll
+G:\学习\git\MyWeb\MyWeb\bin\System.Net.Http.Formatting.dll
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.Http.dll
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.Http.WebHost.dll
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.Mvc.dll
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.Optimization.dll
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.Providers.dll
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.Razor.dll
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.WebPages.Deployment.dll
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.WebPages.dll
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.WebPages.Razor.dll
+G:\学习\git\MyWeb\MyWeb\bin\WebGrease.dll
+G:\学习\git\MyWeb\MyWeb\bin\PagedList.xml
+G:\学习\git\MyWeb\MyWeb\bin\PagedList.Mvc.xml
+G:\学习\git\MyWeb\MyWeb\bin\EntityFramework.xml
+G:\学习\git\MyWeb\MyWeb\bin\Newtonsoft.Json.xml
+G:\学习\git\MyWeb\MyWeb\bin\System.Net.Http.Formatting.xml
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.Http.xml
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.Http.WebHost.xml
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.Mvc.xml
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.Razor.xml
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.WebPages.xml
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.WebPages.Deployment.xml
+G:\学习\git\MyWeb\MyWeb\bin\System.Web.WebPages.Razor.xml
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\EntityFramework.resources.dll
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\System.Web.Http.resources.dll
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\System.Web.Mvc.resources.dll
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\System.Web.Optimization.resources.dll
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\System.Web.Providers.resources.dll
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\System.Web.Razor.resources.dll
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.resources.dll
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+G:\学习\git\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+G:\学习\git\MyWeb\MyWeb\obj\Debug\MyWeb.csprojResolveAssemblyReference.cache
+G:\学习\git\MyWeb\MyWeb\obj\Debug\MyWeb.dll
+G:\学习\git\MyWeb\MyWeb\obj\Debug\MyWeb.pdb
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\MyWeb.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\MyWeb.pdb
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\Antlr3.Runtime.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\EntityFramework.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\Microsoft.Web.Infrastructure.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\Newtonsoft.Json.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\PagedList.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\PagedList.Mvc.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Net.Http.Formatting.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.Http.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.Http.WebHost.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.Mvc.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.Optimization.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.Providers.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.Razor.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.WebPages.Deployment.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.WebPages.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.WebPages.Razor.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\WebGrease.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\PagedList.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\PagedList.Mvc.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\EntityFramework.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\Newtonsoft.Json.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Net.Http.Formatting.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.Http.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.Http.WebHost.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.Mvc.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.Razor.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.WebPages.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.WebPages.Deployment.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\System.Web.WebPages.Razor.xml
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\EntityFramework.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\System.Web.Http.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\System.Web.Mvc.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\System.Web.Optimization.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\System.Web.Providers.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\System.Web.Razor.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\obj\Debug\MyWeb.csprojResolveAssemblyReference.cache
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\obj\Debug\MyWeb.dll
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\obj\Debug\MyWeb.pdb
+G:\学习\我的网站\新建文件夹\MyWeb\MyWeb\bin\LitJSON.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\MyWeb.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\MyWeb.pdb
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\Antlr3.Runtime.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\EntityFramework.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\LitJSON.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\Newtonsoft.Json.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\PagedList.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\PagedList.Mvc.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Net.Http.Formatting.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.Http.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.Http.WebHost.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.Mvc.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.Optimization.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.Providers.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.Razor.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.WebPages.Deployment.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.WebPages.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.WebPages.Razor.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\WebGrease.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\PagedList.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\PagedList.Mvc.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\EntityFramework.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\Newtonsoft.Json.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Net.Http.Formatting.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.Http.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.Http.WebHost.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.Mvc.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.Razor.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.WebPages.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.WebPages.Deployment.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\System.Web.WebPages.Razor.xml
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\EntityFramework.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\System.Web.Http.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\System.Web.Optimization.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\System.Web.Providers.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\obj\Debug\MyWeb.csprojResolveAssemblyReference.cache
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\obj\Debug\MyWeb.dll
+D:\我的C#\新建文件夹\MyFirstWeb-test47\MyFirstWeb-test47\MyWeb\obj\Debug\MyWeb.pdb

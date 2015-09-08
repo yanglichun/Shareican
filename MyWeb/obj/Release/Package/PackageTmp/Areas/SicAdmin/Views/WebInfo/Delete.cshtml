@@ -1,0 +1,55 @@
+﻿@model MyWeb.Models.WebInfo
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/SicAdmin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>WebInfo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Keywords)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Keywords)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ChangeTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ChangeTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ServiceContent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ServiceContent)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

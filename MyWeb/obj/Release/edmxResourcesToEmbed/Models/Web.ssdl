@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShareicanModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ShareicanModelStoreContainer">
+    <EntitySet Name="About" EntityType="ShareicanModel.Store.About" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Admin" EntityType="ShareicanModel.Store.Admin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Announcement" EntityType="ShareicanModel.Store.Announcement" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Article" EntityType="ShareicanModel.Store.Article" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleType" EntityType="ShareicanModel.Store.ArticleType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comment" EntityType="ShareicanModel.Store.Comment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Link" EntityType="ShareicanModel.Store.Link" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MassageBoard" EntityType="ShareicanModel.Store.MassageBoard" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="ShareicanModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="ShareicanModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WebInfo" EntityType="ShareicanModel.Store.WebInfo" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Article_ArticleType" Association="ShareicanModel.Store.FK_Article_ArticleType">
+      <End Role="ArticleType" EntitySet="ArticleType" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Article" Association="ShareicanModel.Store.FK_User_Article">
+      <End Role="Article" EntitySet="Article" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="About">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AboutContent" Type="nvarchar(max)" />
+    <Property Name="CreatDate" Type="datetime" />
+    <Property Name="Isdel" Type="bit" />
+  </EntityType>
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdminName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="AdminNik" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatDate" Type="datetime" />
+    <Property Name="LastLoginDate" Type="datetime" />
+    <Property Name="Isdel" Type="bit" />
+  </EntityType>
+  <EntityType Name="Announcement">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="Publisher" Type="nvarchar" MaxLength="20" />
+    <Property Name="PublisherID" Type="int" />
+    <Property Name="Announcement" Type="nvarchar(max)" />
+    <Property Name="Isdel" Type="bit" />
+    <Property Name="Sort" Type="int" />
+  </EntityType>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="ArticleContent" Type="nvarchar(max)" />
+    <Property Name="CoverImage" Type="nvarchar(max)" />
+    <Property Name="PublisherID" Type="int" />
+    <Property Name="CreatDate" Type="datetime" />
+    <Property Name="ChangeDate" Type="datetime" />
+    <Property Name="Source" Type="nvarchar(max)" />
+    <Property Name="SourceUrl" Type="nvarchar(max)" />
+    <Property Name="ClickTimes" Type="int" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="Label" Type="nvarchar" MaxLength="50" />
+    <Property Name="AgreeTimes" Type="int" />
+    <Property Name="Isdel" Type="bit" />
+    <Property Name="Equipment" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sort" Type="int" />
+    <Property Name="AgainstTimes" Type="int" />
+  </EntityType>
+  <EntityType Name="ArticleType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatDate" Type="datetime" />
+    <Property Name="ChangeDate" Type="datetime" />
+    <Property Name="Isdel" Type="bit" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ComContent" Type="nvarchar(max)" />
+    <Property Name="PublisherID" Type="int" />
+    <Property Name="ComEquipment" Type="nvarchar" MaxLength="50" />
+    <Property Name="ComDate" Type="datetime" />
+    <Property Name="ComCity" Type="nchar" MaxLength="10" />
+    <Property Name="Jubao" Type="nvarchar(max)" />
+    <Property Name="SupportTimes" Type="int" />
+    <Property Name="AgainstTimes" Type="int" />
+    <Property Name="Reply" Type="nvarchar(max)" />
+    <Property Name="Floor" Type="int" />
+    <Property Name="Isdel" Type="bit" />
+    <Property Name="ReplyDate" Type="datetime" />
+    <Property Name="TouristName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Link">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LinkName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LinkUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatDate" Type="datetime" />
+    <Property Name="Sort" Type="int" />
+    <Property Name="Isdel" Type="bit" />
+  </EntityType>
+  <EntityType Name="MassageBoard">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PublisherID" Type="int" />
+    <Property Name="PublisherIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="MsgContent" Type="nvarchar(max)" />
+    <Property Name="CreatDate" Type="datetime" />
+    <Property Name="Isdel" Type="bit" />
+    <Property Name="Equipment" Type="nvarchar" MaxLength="50" />
+    <Property Name="Reply" Type="nvarchar(max)" />
+    <Property Name="ReplyDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="NikName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserImage" Type="nvarchar" MaxLength="50" />
+    <Property Name="Weibo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar(max)" />
+    <Property Name="QQ" Type="int" />
+    <Property Name="ArticleID" Type="int" />
+    <Property Name="CreatDate" Type="datetime" />
+    <Property Name="LastLoginDate" Type="datetime" />
+    <Property Name="LoginDay" Type="int" />
+    <Property Name="Isdel" Type="bit" />
+    <Property Name="Gender" Type="bit" />
+    <Property Name="LevelID" Type="int" />
+  </EntityType>
+  <EntityType Name="WebInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="Keywords" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="ChangeTime" Type="datetime" />
+    <Property Name="ServiceContent" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_Article_ArticleType">
+    <End Role="ArticleType" Type="ShareicanModel.Store.ArticleType" Multiplicity="0..1" />
+    <End Role="Article" Type="ShareicanModel.Store.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ArticleType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Article">
+    <End Role="Article" Type="ShareicanModel.Store.Article" Multiplicity="0..1" />
+    <End Role="User" Type="ShareicanModel.Store.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="ArticleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
